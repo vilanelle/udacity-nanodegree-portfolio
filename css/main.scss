@@ -3,219 +3,222 @@ $paragraph-font-family: Merriweather, serif;
 
 body,
 html {
-  width: 100%;
-  height: 100%;
-  min-width: 350px;
-  padding: 0;
-  margin: 0;
-  background-color: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	min-width: 350px;
+	padding: 0;
+	margin: 0;
+	background-color: #f1f1f1;
 
-  li,
-  p {
-    font-family: $paragraph-font-family;
-  }
+	li,
+	p {
+		font-family: $paragraph-font-family;
+	}
+
+	a {
+		color: black;
+	}
 }
 
 .sectionHeader {
-  text-align: right;
-  font-family: $highlights-font-family;
-  font-size: 1.3em;
-  text-transform: lowercase;
-  padding: 2em 0 0.5em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid black;
+	text-align: right;
+	font-family: $highlights-font-family;
+	font-size: 1.3em;
+	text-transform: lowercase;
+	padding: 2em 0 0.5em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid black;
 }
 
 .m-mainHeader {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  font-family: $highlights-font-family;
-  background-color: #fafafa;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	font-family: $highlights-font-family;
+	background-color: #fafafa;
 }
 
 .a-mainHeader__menuIcon {
-  display: none;
-  font-size: 1.5em;
-  margin-left: 1em;
+	display: none;
+	font-size: 1.5em;
+	margin-left: 1em;
 }
 
 .a-mainHeader__logo {
-  height: 70%;
-  border: 1px solid #d3d3d3;
-  border-radius: 3px;
-  margin-left: 1em;
+	height: 70%;
+	border: 1px solid #d3d3d3;
+	border-radius: 3px;
+	margin-left: 1em;
 }
 
 .a-mainHeader__slogan {
-  transform: translateY(10px);
-  font-size: 1.3em;
-  margin-right: 1em;
+	transform: translateY(10px);
+	font-size: 1.3em;
+	margin-right: 1em;
 }
 
 hr {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .o-globalContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .o-sidebar {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 200px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  height: 270px;
-  font-family: $highlights-font-family;
-  font-size: 1.5em;
-  text-transform: lowercase;
-  background-color: #7e7e7e;
-  border-radius: 2px;
-  line-height: 1.9em;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: 270px;
+	font-family: $highlights-font-family;
+	font-size: 1.5em;
+	text-transform: lowercase;
+	background-color: #7e7e7e;
+	border-radius: 2px;
+	line-height: 1.9em;
 
-  a {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid #d3d3d3;
-  }
+	a {
+		border-bottom: 1px solid #d3d3d3;
+	}
 }
 
 .a-sidebar__itemText {
-  transition: transform 0.6s;
-  display: inline-block;
+	transition: transform 0.6s;
+	-moz-transition: transform 0.6s;
+	-webkit-transition: transform 0.6s;
+	display: inline-block;
 }
 
 .a-sidebar__item {
-  padding: 10px;
-  margin-bottom: 2px;
+	padding: 10px;
+	margin-bottom: 2px;
 }
 
 .a-sidebar__item:hover .a-sidebar__itemText {
-  transform: translateX(40px);
+	transform: translateX(40px);
 }
 
 .o-mainContainer {
-  height: 100%;
-  margin: auto 6em;
-  display: flex;
-  flex-direction: column;
+	height: 100%;
+	margin: auto 6em;
+	display: flex;
+	flex-direction: column;
 }
 
 .m-projectBar__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 2em;
 }
 
 .a-projectBar__item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  flex: 30%;
-  max-width: 40%;
-  order: 1;
-  margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	flex: 30%;
+	max-width: 40%;
+	order: 1;
+	margin-top: 2em;
 
-  img {
-    width: 90%;
-    padding: 5px;
-    background-color: white;
-  }
+	img {
+		width: 90%;
+		padding: 5px;
+		background-color: white;
+	}
 
-  .a-projectBar__imgCaption {
+	.a-projectBar__imgCaption {
+		h4 {
+			font-family: $highlights-font-family;
+		}
 
-    h4 {
-      font-family: $highlights-font-family;
-    }
-
-    p {
-      font-family: $paragraph-font-family;
-    }
-  }
+		p {
+			font-family: $paragraph-font-family;
+		}
+	}
 }
 
 .a-projectBar__feature {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex: 100%;
-  max-width: 100%;
-  order: 0;
-  border-bottom: 1px solid black;
-  text-align: left;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex: 100%;
+	max-width: 100%;
+	order: 0;
+	border-bottom: 1px solid black;
+	text-align: left;
 
-  img {
-    margin: 0 20px 15px 8px;
-    padding: 20px;
-    max-width: 50%;
-  }
+	img {
+		margin: 0 20px 15px 8px;
+		padding: 20px;
+		max-width: 50%;
+	}
 
-  .a-projectBar__imgCaption {
-    display: block;
-    width: 40%;
-  }
+	.a-projectBar__imgCaption {
+		display: block;
+		width: 40%;
+	}
 }
 
 .m-aboutMe,
 .m-links {
-  margin-bottom: 5em;
+	margin-bottom: 5em;
 }
 
 .a-aboutMe__content {
-  width: 90%;
-  margin: auto;
+	width: 90%;
+	margin: auto;
 }
 
 .m-links__list {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 
-  i {
-    padding-right: 0.6em;
-    font-size: 1.3em;
-  }
+	i {
+		padding-right: 0.6em;
+		font-size: 1.3em;
+	}
 }
 
 .a-links__listItem {
-  margin-bottom: 0.3em;
+	margin-bottom: 0.3em;
 }
 
 .m-connect__itemList {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin: auto auto 10em;
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: auto auto 10em;
 }
 
 .m-connect__item {
-  font-size: 2.5em;
+	font-size: 2.5em;
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+	a {
+		text-decoration: none;
+		color: black;
+	}
 }
 // transition effects
 
 .fade-out {
-  opacity: 0;
-  transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out;
 }
 
 .fade-in {
-  opacity: 1;
-  transition: opacity 0.1s ease-in-out;
-  -moz-transition: opacity 0.1s ease-in-out;
-  -webkit-transition: opacity 0.1s ease-in-out;
+	opacity: 1;
+	transition: opacity 0.1s ease-in-out;
+	-moz-transition: opacity 0.1s ease-in-out;
+	-webkit-transition: opacity 0.1s ease-in-out;
 }
