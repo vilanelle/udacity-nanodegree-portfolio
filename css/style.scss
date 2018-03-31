@@ -250,6 +250,7 @@ hr {
 	transform: rotate(11deg);
 }
 
+
 @media screen and (min-width: 1500px) {
 	.o-mainContainer {
 		max-width: 950px;
@@ -340,6 +341,10 @@ hr {
 		flex: 100%;
 		max-width: 95%;
 		justify-content: center;
+	}
+
+	.m-scrollToTop:hover  {
+		transform: rotate(0deg);
 	}
 
 	.-open {
