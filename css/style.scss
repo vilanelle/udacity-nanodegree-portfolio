@@ -223,6 +223,33 @@ hr {
 	-webkit-transition: opacity 0.1s ease-in-out;
 }
 
+.m-scrollToTop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 99;
+	font-size: 44px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-decoration: none;
+	background-color: #7e7e7e;
+	opacity: 0.5;
+	box-shadow: 2px 2px 6px black;
+	color: white;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 4px;
+	transition: background-color .1s ease-out,transform .2s ease-out,opacity .1s ease-out;
+}
+
+.m-scrollToTop:hover {
+	transform: rotate(11deg);
+}
+
 @media screen and (min-width: 1500px) {
 	.o-mainContainer {
 		max-width: 950px;
@@ -264,7 +291,6 @@ hr {
 			display: block;
 			width: 100%;
 			text-align: center;
-
 		}
 	}
 
