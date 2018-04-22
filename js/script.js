@@ -51,3 +51,10 @@ const toggleMenu = () => {
 
 hamburger.addEventListener('click', toggleMenu);
 navLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+// remove sticky hover effect on touch devices
+const scrollToTop = document.getElementById('scrollToTop');
+const removeHoverEffect = () => {
+	scrollToTop.classList.remove('hoverScroll');
+}
+scrollToTop.addEventListener('touchstart', removeHoverEffect);
